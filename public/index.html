@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>React App</title>
+    <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Eligio Becerra</title>
+      <!-- Bootstrap -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+         crossorigin="anonymous"
+      />
+
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- My Style -->
+      <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+     
+      
+      <!-- Banner -->
+      <div class="leftBanner"></div>
+      <!-- Nav Bar -->
+      
+
+      <div class="container-fluid">
+         <!-- Header -->
+         <div id="header">
+            <h1>
+               <span class="title-black"> Eligio Becerra </span>
+            </h1>
+            <h2>Software Engineer</h2>
+            <div id="infinity"></div>
+         </div>
+         <hr />
+         <!-- Background section -->
+         
+         <hr />
+         <!-- Skills section -->
+         <div id="skills" class="container">
+            <h2>Habilidades</h2>
+            <div class="row">
+               <!-- Columna 1 -->
+               <div class="col-6">
+                  <!-- Acordeon -->
+                  <div
+                     class="accordion accordion-flush"
+                     id="accordionSkillSets"
+                  >
+                     <!-- Item 1 -->
+                     <div class="accordion-item">
+                        <!-- Header 1 -->
+                        <h2
+                           class="accordion-header"
+                           id="flush-headingTechSkills"
+                        >
+                           <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-techSkills"
+                              aria-expanded="false"
+                              aria-controls="flush-techSkills"
+                           >
+                              <i class="fas fa-laptop-code"></i
+                              >&nbsp;&nbsp;Habilidades Tecnicas
+                           </button>
+                        </h2>
+                        <!-- End of Header 1 -->
+                        <div
+                           id="flush-techSkills"
+                           class="accordion-collapse collapse"
+                           aria-labelledby="flush-headingTechSkills"
+                           data-bs-parent="#accordionSkillSets"
+                        >
+                           <!-- Item 1 Body -->
+                           <div class="accordion-body">
+
+                              <!-- Server stuff -->
+                              <h4 class="skillHeading">Servidor</h4>
+                              <ul class="skill-list">
+                                <li class="skill-item skill-100">.NET Core (ASP/WebAPI)<span class="skillPercent">100%</span></li>
+                                <li class="skill-item skill-100">Python (Flask)<span class="skillPercent">100%</span></li>
+                                <li class="skill-item skill-80">Java (Spring Boot/RabbitMQ)<span class="skillPercent">80%</span></li>
+                                <li class="skill-item skill-80">JavaScript (nodejs)<span class="skillPercent">80%</span></li>
+                                <li class="skill-item skill-60">PHP<span class="skillPercent">60%</span></li>
+                              </ul>
+
+                              <!-- Client stuff -->
+                              <h4 class="skillHeading">Cliente</h4>
+                              <ul class="skill-list">
+                                <li class="skill-item skill-100">.NET Core (ASP/WPF)<span class="skillPercent">100%</span></li>
+                                <li class="skill-item skill-100">Python (PyGTK/PyQT/jinja2)<span class="skillPercent">100%</span></li>
+                                <li class="skill-item skill-100">JavaScript (jQuery/Angular)<span class="skillPercent">100%</span></li>
+                                <li class="skill-item skill-100">HTML5/CSS3 (Bootstrap, SASS)<span class="skillPercent">100%</span></li>
+                                <li class="skill-item skill-80">Java (Spring Boot)<span class="skillPercent">80%</span></li>
+                              </ul>
+
+                              <!-- Other stuff -->
+                              <h4 class="skillHeading">Otras tecnologias</h4>
+                              <ul class="skill-list">
+                                <li class="skill-item skill-100">GIT<span class="skillPercent">100%</span></li>
+                                <li class="skill-item skill-100">SQL (Varios DBMS)<span class="skillPercent">100%</span></li>
+                                <li class="skill-item skill-80">NoSQL (MongoDB)<span class="skillPercent">80%</span></li>
+                                <li class="skill-item skill-80">BASH, ZSH<span class="skillPercent">80%</span></li>
+                                <li class="skill-item skill-60">Servidores Web (nginx/Apache)<span class="skillPercent">60%</span></li>
+                                <li class="skill-item skill-60">Server Hardening (SSH/OpenSSL)<span class="skillPercent">60%</span></li>
+                              </ul>
+                           </div>
+                           <!-- End of Item 1 Body-->
+                        </div>
+                     </div>
+                     <!-- End of Item 1 -->
+                     <!-- Item 2 -->
+                     <div class="accordion-item">
+                        <!-- Header Item 2 -->
+                        <h2
+                           class="accordion-header"
+                           id="flush-headingOtherSkills"
+                        >
+                           <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-otherSkills"
+                              aria-expanded="false"
+                              aria-controls="flush-otherSkills"
+                           >
+                              <i class="fas fa-project-diagram"></i
+                              >&nbsp;&nbsp;Habilidades No Tecnicas
+                           </button>
+                        </h2>
+                        <!-- End of Header of Item 2 -->
+                        <div
+                           id="flush-otherSkills"
+                           class="accordion-collapse collapse"
+                           aria-labelledby="flush-headingOtherSkills"
+                           data-bs-parent="#accordionSkillSets"
+                        >
+                           <!-- Item 2 Body -->
+                           <h4 class="skillHeading">Trabajo en Equipo</h4>
+                           <ul class="skill-list">
+                             <li class="skill-item skill-100">Manejo de metodologias (XP/SCRUM)</li>
+                             <li class="skill-item skill-100">Trabajo en equipo</li>
+                             <li class="skill-item skill-100">Spec en base a user stories</li>
+                             <li class="skill-item skill-100">Flexiblilidad</li>
+                             <li class="skill-item skill-100">Comodo trabajando con el cliente</li>
+                           </ul>
+
+                           <h4 class="skillHeading">Freelance</h4>
+                           <ul class="skill-list">
+                             <li class="skill-item skill-100">Proactivo</li>
+                             <li class="skill-item skill-100">Enfocado en cliente</li>
+                             <li class="skill-item skill-100">Metodico</li>
+                             <li class="skill-item skill-100">Atencion al detalle</li>
+                             <li class="skill-item skill-100">Desarrollo completo (FullStack)</li>
+                           </ul>
+                           <!-- End of Item 2 Body -->
+
+                        </div>
+                     </div>
+                     <!-- End of item 2 -->
+                     <!--  Enf of acordeon-->
+                  </div>
+               </div>
+               <!-- Columna 2 -->
+               <div class="col-6 me-auto">
+                  <p>
+                     <h4 class="codeComment">/***<br>
+                     La habilidad técnica es el dominio de la complejidad, mientras que la creatividad es el dominio de la simplicidad.<br>
+                     Christopher Zeeman<br>
+                     ***/</h4>
+                  </p>
+               </div>
+               <!-- Fin Columna 2 -->
+            </div>
+         </div>
+         <hr />
+         <!-- Portafolio section -->
+         <div id="portafolio" class="container">
+            <h2>Portafolio</h2>
+            <!-- Carrusel Inicio -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <p>
+                        <a herf="https://github.com/eligiobz/ERPace-server">MobilERP/ERPAce</a> es un POS (Point Of Sale) que desarrollé durante 2017 y 2019, 
+                        Actualmente lo estoy rediseñado en una nueva solución completa, escalandolo a ERP con nuevas funciones y una interfaz mas amigable.
+                        MobilERP/ERPAce fue un prototipo de la funcionalidad buscasda y validada en campo para la creación de una nueva app.
+                     </p>
+                  </div>
+                 <div class="carousel-item">
+                  <p>
+                     La <a href="https://www.port.ac.uk">Universidad de Portsmouth</a> desarrollaba en conjunto con el sector privado una investigación 
+                     para validar la creación de un nuevo producto que satisfiera un nuevo nicho de mercado. Mi rol de asociado no solo requeria un 
+                     fuerte perfil tecnico, sino tambien la flexibilidad  y capacidad trabajar de cerca con el cliente para descubrir nuevas 
+                     oportunidades de mejora y crecimiento.
+                  </p>
+                  <p>
+                     <a href="https://www.port.ac.uk/"><img class="smallImage" src="images/LogoSmallUoP.png" alt="University of Portsmouth"></a>
+                     <a href="http://ktp.innovateuk.org/"><img class="smallImage" src="images/LogoSmallKTP.png" alt="Knowledge Transfer Partnerships"></a>
+                  </p>
+                 </div>
+                 <div class="carousel-item">
+                  <p>
+                     El proyecto <a href="https://glacsweb.org/">Glacsweb</a> de la <a href="https://www.southampton.ac.uk/">Universidad de Southampton</a> necesitaba una manera de 
+                     poner la información recabada por sus sondas al publico general. Se buscaba que los usuarios manipularan los datos de de manera interactiva.
+                     Se desarrollo una webapp para el despliegue personalizado de los datos.
+                  </p>
+                  <p>
+                   <a href="https://www.southampton.ac.uk/"><img class="smallImage" src="images/LogoSmallUoS.png" alt="University of Southamton"></a>
+                  </p>
+               </div>
+               <div class="carousel-item">
+                  <p>
+                     La ciudad de Irapuato 
+                  </p>
+                  <p>
+                   <a href="https://www.southampton.ac.uk/"><img class="smallImage" src="images/LogoSmallUoS.png" alt="University of Southamton"></a>
+                  </p>
+               </div>
+               </div>
+               <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </a>
+             </div>
+            <!-- Fin carrusel -->
+            <h4 class="codeComment">/*** 
+               Un gran logro no debería ser el final del camino, solo el punto de partida para el próximo salto hacia adelante. <br> Harvey Mackay ***/ <br></h4>
+         </div>
+         <!-- Portafolio fin -->
+         <hr />
+         <!-- Contact section -->
+         <div id="contact" class="container">
+            <h2>Contacto</h2>
+
+            <p>
+               Me encuentro en busca de proyectos interesantes. ¿Tienes alguna propuesta? <em><strong>Contactame</strong></em> atraves de mis perfiles sociales.
+            </p>
+            <div class="row">
+               <div class="col-3">
+                  <p>
+                     <a href="https://www.facebook.com/eligio.becerra.10"
+                        ><i class="fab fa-facebook-f contact-icon"></i
+                     ></a>
+                  </p>
+               </div>
+               <div class="col-3">
+                  <p>
+                     <a href="https://github.com/eligiobz"
+                        ><i class="fab fa-github contact-icon"></i
+                     ></a>
+                  </p>
+               </div>
+               <div class="col-3">
+                  <p>
+                     <a href="https://www.linkedin.com/in/eligiobecerra/"
+                        ><i class="fab fa-linkedin-in contact-icon"></i
+                     ></a>
+                  </p>
+               </div>
+               <div class="col-3">
+                  <p>
+                     <a href="mailto:eligio.bz@gmail.com"
+                        ><i class="fas fa-envelope contact-icon"></i
+                     ></a>
+                  </p>
+               </div>
+            </div>
+            <h4 class="codeComment">
+               /*** Me mantengo en contacto con mucha gente con la que trabajo. <br>
+               Kim Fields ***/
+            </h4>
+            <hr />
+         </div>
+         <p style="margin-bottom: auto; text-align: center;font: .9rem sans-serif;">Eligio Becerra &copy; 2021</p>
+      </div>
+      <!-- Bootstrap -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+         crossorigin="anonymous"
+      ></script>
+      <!-- Font Awesome -->
+      <script
+         src="https://kit.fontawesome.com/517cbf35ef.js"
+         crossorigin="anonymous"
+      ></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </div>
+    
+  </body>
+</html>

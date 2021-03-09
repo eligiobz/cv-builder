@@ -1,0 +1,248 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* General */
+body {
+  background-image: repeating-linear-gradient(
+    to right,
+    #00ffff,
+    #0188e8,
+    #00335a,
+    #000,
+    #00335a,
+    #0188e8,
+    #00ffff
+  );
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+h1,
+h2,
+h4 {
+  color: #f05454;
+  font-family: "Share Tech Mono", monospace;
+  line-height: 1.5;
+  margin: 1.5rem 4rem;
+}
+
+h1 {
+  font-size: 65px;
+  letter-spacing: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+h2 {
+  letter-spacing: 0.5rem;
+  font-size: 40px;
+}
+
+p {
+  color: #dddddd;
+  margin: 1.5rem 4rem;
+  /* letter-spacing: .15rem; */
+}
+
+hr {
+  border-top: 10px dotted #ddd;
+  width: 30%;
+  margin: 3rem auto;
+}
+
+a {
+  color: #2e4153;
+}
+
+a:hover {
+  color: yellow;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container-fluid {
+  background-color: #30475e;
+  width: 70%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f05454;
+}
+
+.navbar-brand {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2rem;
+  color: #00335a;
+}
+
+.nav-link:hover {
+  color: yellow;
+}
+
+/* Banner */
+.leftBanner {
+  display: block;
+  position: fixed;
+  margin-left: 0;
+  height: 100%;
+  width: 20%;
+  z-index: -1;
+  /* background-image: url("images/gifBar.gif"); */
+  background-size: 150%;
+  background-repeat: repeat;
+  opacity: 50%;
+}
+
+/* Infinity Logo */
+#infinity {
+  margin: 3rem auto;
+  position: relative;
+  width: 212px;
+  height: 100px;
+  box-sizing: content-box;
+}
+
+#infinity:before,
+#infinity:after {
+  content: "";
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border: 20px solid skyblue;
+  border-radius: 50px 50px 0 50px;
+  transform: rotate(-45deg);
+}
+
+#infinity:after {
+  left: auto;
+  right: 0;
+  border-radius: 50px 50px 50px 0;
+  transform: rotate(45deg);
+}
+
+/* Header */
+#header {
+  text-align: center;
+}
+
+.companion-img {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  border-radius: 100%;
+  box-shadow: rgb(0, 0, 255);
+}
+
+/* Skill list */
+.accordion-header {
+  margin: 1rem auto;
+  width: 75%;
+}
+
+.accordion-button.collapsed {
+  background-color: #ddd;
+  color: #f05454;
+  border: none;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.3rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f05454;
+  color: #ddd;
+  border: none;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.3rem;
+}
+
+.skill-list {
+  color: rgb(189, 188, 188);
+  width: 90%;
+  line-height: 1.5;
+}
+.skill-item {
+  font-family: "Share Tech Mono", monospace;
+  letter-spacing: 0.2rem;
+  background: linear-gradient(to right, #0195ea, tomato);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin: 10px 2px;
+  padding-left: 1rem;
+}
+
+.skillPercent {
+  margin-left: 0;
+  display: block;
+  float: right;
+}
+
+.skill-80 {
+  background-size: 80%;
+}
+
+.skill-70 {
+  background-size: 70%;
+}
+
+.skill-60 {
+  background-size: 60%;
+}
+
+/* Portafolio */
+.carousel-item {
+  text-align: center;
+  background-color: #bf656582;
+  border: solid 1px red;
+  border-radius: 10px;
+}
+
+.carousel-inner,
+.carousel-control-next,
+.carousel-control-prev {
+  display: block;
+}
+
+.carousel-inner,
+.carousel-inner p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Contact information */
+.contact-icon {
+  color: #f05454;
+  font-size: 96px;
+  margin: auto;
+}
+
+.cv-link {
+  color: white;
+  font-weight: bolder;
+}
+
+.codeComment {
+  color: greenyellow;
+}
+
+.smallImage {
+  border-radius: 10px;
+}
