@@ -26,7 +26,7 @@ function App(props) {
       <Section 
       title="Habilidades"
       contentType="list"
-      contentData=[]
+    //   contentData=[]
       companionImg={null}
       companionPhrase=""/>
       <Section 
