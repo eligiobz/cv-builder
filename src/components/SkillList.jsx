@@ -1,16 +1,16 @@
 import React from "react";
-import Paragraph from "./Paragraph";
-import SkillHeading from "./SkillHeading";
+import {v4 as uuidv4} from "uuid";
 
 function SkillList(props) {
-
   return (
     <ul className="skill-list">
       {props.skills.map((skill) => {
         return (
-          <li className="skill-item skill-100">
+          <li key={uuidv4()} className="skill-item skill-100">
             {skill.skill}
-            <span className="skillPercent">{skill.level}%</span>
+            <span className="skillPercent">
+              {skill.level && skill.level + "%"}
+            </span>
           </li>
         );
       })}
