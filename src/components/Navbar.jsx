@@ -1,10 +1,40 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 function Navbar(props) {
+  const authorLinks = {
+    authorName: "Eligio Becerra",
+    links: [
+      {
+        url: "docs/EligioBecerraZavalaCV.pdf",
+        customClass: "cv-link",
+        text: (
+          <Fragment>
+            Version PDF <i className="fas fa-file-download"></i>
+          </Fragment>
+        ),
+      },
+      {
+        url: "#contact",
+        customClass: "",
+        text: <Fragment>Contacto</Fragment>,
+      },
+      {
+        url: "#skills",
+        customClass: "",
+        text: <Fragment>Habilidades</Fragment>,
+      },
+      {
+        url: "#portfolio",
+        customClass: "",
+        text: <Fragment>Portafolio</Fragment>,
+      },
+    ],
+  };
   return (
     <nav className="navbar fixed-top navbar-expand-lg">
       <a className="navbar-brand" href="">
-        Eligio Becerra
+        {authorLinks.authorName}
       </a>
       <button
         className="navbar-toggler"
@@ -19,31 +49,19 @@ function Navbar(props) {
       </button>
       <div className="collapse navbar-collapse" id="menu">
         <ul className="navbar-nav ms-auto">
-          <li className="nav-item"> 
-            <a className="nav-link cv-link" href="docs/EligioBecerraZavalaCV.pdf">
-              Version PDF <i className="fas fa-file-download"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#contact">
-              Contacto
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#footer">
-              Visión
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#skills">
-              Habilidades
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#portafolio">
-              Portafolio
-            </a>
-          </li>
+          {authorLinks.links.map((link) => {
+            return (
+              <li key={uuidv4()} className="nav-item">
+                <a
+                  key={uuidv4()}
+                  className={"nav-link " + link.customClass}
+                  href={link.url}
+                >
+                  {link.text}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </nav>

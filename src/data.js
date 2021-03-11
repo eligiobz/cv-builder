@@ -1,11 +1,16 @@
-import React from "react";
-import { v4 as uuidv4 } from "uuid";
-import AccordionHeader from "./AccordionHeader";
-import SkillHeading from "./SkillHeading";
-import SkillList from "./SkillList";
+export const paragraphData =
+"Un ingeniero con pasión por el detalle y siempre buscando el mayor\
+impacto con sus proyectos. Ya se Lorem ipsum dolor sit amet,\
+consectetur adipiscing elit. Vestibulum ac lacus finibus, auctor\
+turpis vel, scelerisque massa. Donec imperdiet quis ante eu laoreet.\
+Ut lacinia consectetur neque eget ullamcorper. Mauris commodo ipsum\
+a purus varius auctor. Maecenas finibus consectetur nisi commodo\
+vestibulum. Vestibulum est dui, viverra a sapien ut, pretium\
+venenatis erat. Integer sit amet rutrum justo, tincidunt venenatis\
+dolor. In efficitur posuere erat non rhoncus. Nunc eget neque non\
+nulla sodales rutrum sit amet porta tortor.";
 
-function AccordionList(props) {
-  const SkillSet = {
+export const SkillSet = {
     sets: [
       {
         name: "set_1",
@@ -73,38 +78,4 @@ function AccordionList(props) {
     ],
   };
 
-  return (
-    <div className="col-6">
-      <div className="accordion accordion-flush" id="accordionSkillSets">
-
-        {SkillSet.sets.map(set => {
-            return(<div className="accordion-item">
-            
-            <AccordionHeader key={uuidv4()} title={set.title} name={set.name} />
-            
-            <div
-              id={"flush-"+set.name}
-              className="accordion-collapse collapse"
-              aria-labelledby={"flush-heading"+set.name}
-              data-bs-parent="#accordionSkillSets"
-            >
-              <div className="accordion-body">
-                {set.sections.map((section) => {
-                  return (
-                    <div>
-                      <SkillHeading key={uuidv4()} title={section.title} />
-                      <SkillList key={uuidv4()} skills={section.skills} />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>);
-        })}
-        {/* <!--  Enf of acordeon--> */}
-      </div>
-    </div>
-  );
-}
-
-export default AccordionList;
+  export default SkillSet;
