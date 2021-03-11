@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Section from "./Section";
-import SkillSet, {paragraphData} from "../data.js";
+import SkillSet, {paragraphData, PorfolioData} from "../data.js";
 
 function App(props) {
 
@@ -25,6 +25,7 @@ function App(props) {
       <Section
         title="Portafolio"
         contentType="carousel"
+        contentData={PorfolioData}
         companionImg={null}
         companionPhrase=""
       />

@@ -1,5 +1,6 @@
 import React from "react";
 import AccordionList from "./AccordionSkills/AccordionList";
+import Carousel from "./Carousel/Carousel";
 import CodeComment from "./CompanionItems/CodeComment";
 import CompanionImg from "./CompanionItems/CompanionImg";
 import Paragraph from "./Paragraph";
@@ -12,8 +13,8 @@ function Section(props) {
       {props.contentType === "paragraph" && (
         <div className="row">
           <Paragraph contentData={props.contentData} />
-          
           {props.companionImg && <CompanionImg url={props.companionImg} />}
+          <hr />
         </div>
       )}
 
@@ -25,6 +26,19 @@ function Section(props) {
             quote="La habilidad técnica es el dominio de la complejidad, mientras que la creatividad es el dominio de la simplicidad."
             author="Christopher Zeeman"
           />
+          <hr />
+        </div>
+      )}
+
+      {props.contentType === "carousel" && (
+        <div className="row">
+          <Carousel 
+          contentData={props.contentData}/>
+          <CodeComment
+            quote=" Un gran logro no debería ser el final del camino, solo el punto de partida para el próximo salto hacia adelante."
+            author="Harvey Mackay"
+          />
+          <hr />
         </div>
       )}
     </div>
